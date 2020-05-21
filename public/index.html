@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minion Chat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <style>
+      body {
+        font-family: monospace;
+        background-color: #F5E050;
+        padding: 4em;
+      }
+      h1 {
+        color: #1560bd;
+      }
+      .message {
+        background-color: white;
+      }
+      #output {
+        height: 25em;
+        background-color: white;
+        overflow: scroll;
+        padding-left: 3em;
+        padding-right: 3em;
+        border: 5px solid black;
+      }
+      .message {
+        font-size: 18px;
+      }
+      input {
+        background-color: white;
+        border: 5px solid #1560bd;
+        color: #1560bd;
+        padding: 15px;
+        font-family: monospace;
+        font-size: 15px;
+        margin: 0px;
+        margin-top: 5px;
+        width: 85%;
+      }
+      button {
+        padding: 15px;
+        border: 5px solid black;
+        font-family: monospace;
+        font-size: 15px;
+        margin: 0px;
+        margin-top: 5px;
+        width: 120px;
+        background-color: #1560bd;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover {
+        background-color:#3D86E0;
+      }
+      button:active {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Minion Chat</h1>
+    <p>Welcome to the first minion chatroom, where you can let your inner minion out. Look out for random messages from Gru!</p>
+    <p id="namespace"><strong>You are:</strong> </p>
+    <div id="minion-chat">
+      <div id="chat-window">
+        <div id="output">
+        </div>
+        <input id="message" type="text" placeholder="Messsage">
+        <button id="send">Send</button>
+      </div>
+    </div>
+    <script src="/chat.js"></script>
+  </body>
+</html>
