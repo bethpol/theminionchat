@@ -1,6 +1,7 @@
-# This is a minion themed chat room.
+# This is a minion themed chat room!
+I created this project as a learning experience, featuring a node webserver, socket.io for websockets, and jquery on the front end.
 
----
+## Check out the live demo: https://glitch.com/~theminionchat
 
 ### Day 1: 4/22
 
